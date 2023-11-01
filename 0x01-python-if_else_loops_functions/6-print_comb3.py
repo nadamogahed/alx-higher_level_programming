@@ -6,6 +6,6 @@ for i in range(0, 9):
         elif x < i:
             x = i + 1
         elif i == 8 and x == 9:
-            print("{}{}".format(i,x))
+            print("{}{}".format(i, x))
         else:
-            print("{}{}, ".format(i,x), end='')
+            print("{}{}, ".format(i, x), end='')
