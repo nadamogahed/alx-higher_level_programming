@@ -3,7 +3,10 @@ import sys
 
 
 def main(argv):
-    print("{} arguments".format(len(argv)), end='')
+    if len(argv) == 1:
+        print("{} argument:".format(len(argv)))
+    else:
+        print("{} arguments".format(len(argv)), end='')
     if len(argv) < 1:
         print(".")
     else:
