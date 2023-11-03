@@ -7,10 +7,10 @@ def main(argv):
         print("{} argument:".format(len(argv)))
     else:
         print("{} arguments".format(len(argv)), end='')
-    if len(argv) < 1:
-        print(".")
-    else:
-        print(":")
+        if len(argv) < 1:
+            print(".")
+        else:
+            print(":")
     for i in range(len(argv)):
         print("{}: {}".format(i + 1, argv[i]))
 
