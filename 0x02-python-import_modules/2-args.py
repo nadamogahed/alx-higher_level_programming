@@ -4,7 +4,7 @@ import sys
 
 def main(argv):
     print("{} arguments".format(len(argv)), end='')
-    if len(argv) < 0:
+    if len(argv) < 1:
         print(".")
     else:
         print(":")
