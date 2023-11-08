@@ -2,9 +2,7 @@
 def square(x):
     return x**2
 def square_matrix_simple(matrix=[]):
-    new_matrix = []
-    for row in matrix:
-        new_row = list(map(square, row))
-        new_matrix.append(new_row)
+    new_matrix = [row.copy() for row in matrix]  # This creates a copy of the matrix
+    for i, row in enumerate(new_matrix):
+        new_matrix[i] = list(map(square, row))
     return new_matrix
-
